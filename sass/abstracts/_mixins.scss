@@ -1,0 +1,25 @@
+$primary-color: #ebdc0b;
+$secondary-color: #000;
+$white: #fff;
+
+@font-face {
+    font-family: 'PPNeueMontreal-Book';
+    src: url('../../fonts/PPNeueMontreal-Book.woff') format('woff'), url('../../fonts/PPNeueMontreal-Book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'PPTelegraf-Ultrabold';
+    src: url('../../fonts/PPTelegraf-Ultrabold.woff') format('woff'), url('../../fonts/PPTelegraf-Ultrabold.woff2') format('woff2');
+}
+
+p {
+    font-family: 'PPNeueMontreal-Book';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PPTelegraf-Ultrabold';
+}
+
+[class*="digit"] {
+    font-family: 'PPNeueMontreal-Book';
+}
