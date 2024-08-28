@@ -83,7 +83,7 @@
         div {
             flex: 1;
             color: $primary-color;
-            text-transform: uppercase;
+            // text-transform: uppercase;
         }
         
         .site-info {
@@ -92,14 +92,23 @@
             p {
                 font-size: 1rem;
             }
-        }
 
-        .menu {
-            text-align: right;
-            ion-icon {
-                font-size: 1.5rem;
+            .links {
+                ul {
+                    list-style: none;
+                    margin: 0.35rem 0;
+                    li {
+                        display: inline-block;
+                        margin: 0 0.25rem;
+                        a {
+                            text-decoration: none;
+                            color: $primary-color;
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
             }
-        }
+        }       
     }
 
     .header {
@@ -109,7 +118,7 @@
         transform: translate(-50%, -50%);
 
         h1 {
-            text-transform: uppercase;
+            // text-transform: uppercase;
             color: $primary-color;
             font-size: 15vw;
             font-weight: 200;
@@ -119,6 +128,47 @@
                 position: relative;
                 top: 400px;
             }
+        }
+    }
+
+    .btn-scroll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+
+        ion-icon {
+            color: $primary-color;
+            font-size: 1.25rem;
+            animation: bounce 2s infinite;
+            -webkit-animation: bounce 2s infinite;
+            -moz-animation: bounce 2s infinite;
+            -o-animation: bounce 2s infinite;
+        }
+
+        @-webkit-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+            40% {-webkit-transform: translateY(-20px);}
+            60% {-webkit-transform: translateY(-10px);}
+        }
+         
+        @-moz-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+            40% {-moz-transform: translateY(-20px);}
+            60% {-moz-transform: translateY(-10px);}
+        }
+         
+        @-o-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+            40% {-o-transform: translateY(-20px);}
+            60% {-o-transform: translateY(-10px);}
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
         }
     }
 }

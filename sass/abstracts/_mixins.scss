@@ -12,8 +12,17 @@ $white: #fff;
     src: url('../../fonts/PPTelegraf-Ultrabold.woff') format('woff'), url('../../fonts/PPTelegraf-Ultrabold.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'PPTelegraf-Ultralight';
+    src: url('../../fonts/PPTelegraf-Ultralight.woff') format('woff'), url('../../fonts/PPTelegraf-Ultralight.woff2') format('woff2');
+}
+
 p {
     font-family: 'PPNeueMontreal-Book';
+}
+
+a {
+    font-family: 'PPTelegraf-Ultralight';;
 }
 
 h1, h2, h3, h4, h5, h6 {
